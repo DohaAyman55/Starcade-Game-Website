@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Memory Card Game</title>
+    <!-- adjust layout on mobile devices-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <link rel="stylesheet" href="memoryCardGame.css">-->
+     <link rel="stylesheet" href="cardsstyle.css">
+    
+</head>
+<body>
+    <!-- 2 div tags for each card-->
+    <!-- use class attribute to style them in css-->
+     <h1>MEMORY CARD GAME</h1>
+
+     <div id="win-message" style="display: none; font-size: 1.5rem; color: rgb(11, 109, 11); margin-top: 15px;">
+        🎉 Congratulations! You've matched all cards! 🎉
+    </div>
+    <div id="score" style="font-size: 1.5rem; color: darkred; margin-top: 10px;">000</div>
+
+    
+    <div class="GameBoard">
+        <!-- 1,2 -->
+        <div class="card" data-name="chill guy">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\Chill Guy.jpg" alt="Chill Guy">   </div>
+        </div>
+        <div class="card" data-name="chill guy">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\Chill Guy.jpg" alt="Chill Guy">   </div>
+        </div>
+        <!-- 3,4 -->
+        <div class="card" data-name="hamster">
+            <div class="front"> ?  </div>
+            <div class="back">  <img src="images\hamster.jpg">   </div>
+        </div>
+        <div class="card" data-name="hamster">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\hamster.jpg">   </div>
+        </div>
+        <!-- 5,6 -->
+        <div class="card" data-name="dog">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\locked in dog.jpg">   </div>
+        </div>
+        <div class="card" data-name="dog">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\locked in dog.jpg">   </div>
+        </div>
+        <!-- 7,8 -->
+        <div class="card" data-name="prawn">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\kingPrawn.jpg">   </div>
+        </div>
+        <div class="card" data-name="prawn">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\kingPrawn.jpg">   </div>
+        </div>
+        <!-- 9,10 -->
+        <div class="card" data-name="minion">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\minion.jpg">   </div>
+        </div>
+        <div class="card" data-name="minion">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\minion.jpg">   </div>
+        </div>
+        <!-- 11,12 -->
+        <div class="card" data-name="plankton">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\plankton.jpg">   </div>
+        </div>
+        <div class="card" data-name="plankton">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\plankton.jpg">   </div>
+        </div>
+        <!-- 13,14 -->
+        <div class="card" data-name="puppet">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\puppet.jpg">   </div>
+        </div>
+        <div class="card" data-name="puppet">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\puppet.jpg">   </div>
+        </div>
+        <!-- 15,16 -->
+        <div class="card" data-name="robot">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\robot.jpg">   </div>
+        </div>
+        <div class="card" data-name="robot">
+            <div class="front"> ? </div>
+            <div class="back">  <img src="images\robot.jpg" alt="?">   </div>
+        </div>
+    </div>
+      
+    
+    <!--script tag with src as javascript file for game mechanism-->
+<script src="memoryCard.js"></script>
+
+</body>
+</html>

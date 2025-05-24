@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: monospace;
+    font-size: 18pt;
+    color: #8b7362;
+    background-color: #051a0f;
+    overflow: hidden;
+}
+
+#title-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+#run {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#instruction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#instruction img {
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#moving-background {
+    position: absoluet;
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 598px;
+    border: 5px solid #423237;
+
+    background-image: url("images/forest.jpg");
+    background-repeat: repeat-x;
+    background-size: auto 100%; /*don't strech image for seamless transition*/
+}
+.bg-animation{
+    animation: background 1.5s linear infinite;
+} 
+
+@keyframes background {
+    0% {background-position: 0 0;}
+    100% {background-position: -736px 0;}
+}
+
+#character {
+    position: absolute;
+    background-image: url("images/dino-sword2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100px;
+    height: 100px;;
+    margin-top: 380px;
+    transform: translateX(30px);
+}
+    
+.jump{
+    animation: jump 400ms;
+}
+
+@keyframes jump {
+    0% {margin-top: 340px;}
+    30% {margin-top: 180px;}
+    80% {margin-top: 180px;}
+    100% {margin-top: 340px;}
+}
+
+/*
+#block1 {
+    position: absolute;
+
+    background-image: url("images/stone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100px;
+    height: 100px;
+    margin-top: 385px;
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.animate-block1 {
+    animation: slide 2s linear infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; /* prevents early visibility 
+}*/
+
+#block2 {
+    position: absolute;
+
+    background-image: url("images/bark-block.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100px;
+    height: 100px;
+    margin-top: 390px;
+
+}
+
+.animate-block2{
+    animation: slide2 2.3s linear infinite;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards; /* prevents early visibility */
+}
+
+/*
+@keyframes slide {
+    0%      { transform: translateX(300px); opacity: 0; }
+    18%     { opacity: 0; }
+    21%     { opacity: 0.5; }
+    80%     { opacity: 1; }
+    100%    { transform: translateX(-600px); opacity: 1; }
+}*/
+
+@keyframes slide2 {
+    0%      { transform: translateX(1000px);}
+    100%    { transform: translateX(-800px);}
+}
+
+#gameOverMessage {
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 530px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18pt;
+    padding: 30px 60px;
+    border-radius: 16px;
+    z-index: 100;
+    display: none;
+    font-family: 'Pixel', sans-serif;
+    text-align: center;
+}
+
+#restartButton {
+    position: absolute;
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color:rgba(86, 99, 15, 0.603);
+
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Pixel', sans-serif;
+    z-index: 200;
+}
+
+#restartButton:hover {
+    background-color: rgba(69, 79, 17, 0.603);
+}
+
+
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/PixeloidSansBold-PKnYd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
