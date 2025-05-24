@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(20, 30, 42);
+    background-color: #000930;
+}
+
+#content {
+    margin: 0;
+    background-image: url("../images/backgrounds/404.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pixel';
+    font-size: 500%;
+    text-align: center;
+    color: aliceblue;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/PixeloidSans-mLxMm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* -------- Responsive @media for 404 page -------- */
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+    #content {
+        font-size: 500%;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    #content {
+        font-size: 300%;
+    }
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 767px) {
+    #content {
+        font-size: 200%;
+        padding: 20px; /* Add padding for small screens */
+        background-size: contain; /* Make sure background image fits nicely */
+    }
+}
