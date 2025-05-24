@@ -4,79 +4,64 @@
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🧑‍💻 User Features
-- ✅ User Authentication (Sign up / Log in)
-- 🎮 Access and play multiple browser-based games
-- 🏆 Live Leaderboards for top scores
-- ✨ Customizable user profiles
-- 📈 Track personal high scores for each game
+### User Features
+- User Authentication (Sign up / Log in)  
+- Access and play multiple browser-based games  
+- Live leaderboards for top scores  
+- Customizable user profiles  
+- Track personal high scores for each game  
 
-### 🛠️ Admin Features
-- 🚫 Manage user restrictions (banning and activating accounts)
-- ➕ Add / 🗑 Remove available games
-- 📜 View activity logs of admins and users
-- 🔧 Monitor platform content and maintain fair play
-- Head admin can manage admin accounts add a new account
-
----
-
-## 🛠 Tech Stack
-
-- **Frontend**: HTML5, CSS, JavaScript
-- **Backend**: PHP
-- **Database**: MySQL (via myphpadmin)
-- **Server**: Apache (via XAMPP)
-- **Auth**: Custom authentication system
+### Admin Features
+- Manage user restrictions (banning and activating accounts)  
+- Add and remove available games  
+- View activity logs of admins and users  
+- Monitor platform content and maintain fair play  
+- Head admin can manage admin accounts, including adding new accounts  
 
 ---
 
-## 📸 Screenshots
-1. HomePage
-![image](https://github.com/user-attachments/assets/d30a03d7-7bbd-40d5-ab88-ea72a68f0e83)
+## Tech Stack
 
-2. Games Page
-![image](https://github.com/user-attachments/assets/282a1a81-4dec-4cd7-8fc3-19269b01e4c7)
-
-3. LeaderBoard
-![image](https://github.com/user-attachments/assets/01f5950e-d78d-4883-a16f-1eeaee5994fd)
-
-4. Player Profile
-![image](https://github.com/user-attachments/assets/0e31fa7f-87d2-46dd-9640-67246d3bf34a)
-
-5. Admin Dashboard
-![image](https://github.com/user-attachments/assets/9dc51f41-19a4-4d76-83fd-7835157c5fdf)
-
+- **Frontend:** HTML5, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL (via phpMyAdmin)  
+- **Server:** Apache (via XAMPP)  
+- **Authentication:** Custom authentication system  
 
 ---
 
-## ⚙️ Installation
+## Screenshots
 
-Prerequisites
-- XAMPP installed (includes Apache, PHP, MySQL)
-- Git (optional, for cloning repo)
-- A modern web browser
+1. Home Page  
+![Home Page](https://github.com/user-attachments/assets/d30a03d7-7bbd-40d5-ab88-ea72a68f0e83)  
 
+2. Games Page  
+![Games Page](https://github.com/user-attachments/assets/282a1a81-4dec-4cd7-8fc3-19269b01e4c7)  
 
-1. Clone the repository:
-   
+3. Leaderboard  
+![Leaderboard](https://github.com/user-attachments/assets/01f5950e-d78d-4883-a16f-1eeaee5994fd)  
+
+4. Player Profile  
+![Player Profile](https://github.com/user-attachments/assets/0e31fa7f-87d2-46dd-9640-67246d3bf34a)  
+
+5. Admin Dashboard  
+![Admin Dashboard](https://github.com/user-attachments/assets/9dc51f41-19a4-4d76-83fd-7835157c5fdf)  
+
+---
+
+## Installation
+
+### Prerequisites
+- XAMPP installed (includes Apache, PHP, MySQL)  
+- Git (optional, for cloning the repository)  
+- A modern web browser  
+
+### Steps
+
+1. **Clone the repository:**
+
 ```bash
 git clone https://github.com/yourusername/starcade.git
 cd starcade
-```
-
-2. Move project files to your web server root
-   
-If using XAMPP, copy the entire starcade folder into the htdocs directory.
-Usually found at:
-C:\xampp\htdocs\starcade (Windows)
-/opt/lampp/htdocs/starcade (Linux)
-
-4. Create a MySQL database
-
-Open phpMyAdmin by navigating to http://localhost/phpmyadmin
-Click Databases and create a new database, e.g. gamesite
-Use the SQL file Starcade Gamesite Database.sql to import the tables into the database.
-
-
