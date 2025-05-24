@@ -32,6 +32,11 @@
 
 ---
 
+## Additional Features
+
+- Mail Authentication on signup using PHPMailer
+- Password reset functionality with email confirmation via PHPMailer
+
 ## Screenshots
 
 1. Home Page  
