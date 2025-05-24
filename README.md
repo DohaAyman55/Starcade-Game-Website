@@ -65,3 +65,17 @@
 ```bash
 git clone https://github.com/yourusername/starcade.git
 cd starcade
+```
+
+2. **Move project files to your web server root**
+   
+    If using XAMPP, copy the entire starcade folder into the htdocs directory.
+    Usually found at:
+    C:\xampp\htdocs\starcade (Windows)
+    /opt/lampp/htdocs/starcade (Linux)
+
+4. **Create a MySQL database**
+
+    Open phpMyAdmin by navigating to http://localhost/phpmyadmin
+    Click Databases and create a new database, e.g. gamesite
+    Use the SQL file Starcade Gamesite Database.sql to import the tables into the database.
