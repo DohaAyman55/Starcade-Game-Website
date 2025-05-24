@@ -1,6 +1,6 @@
 # Starcade Game Website
 
-**Starcade** is a web-based game platform that provides a retro-modern arcade experience with full user interaction and administrative control. Users can log in, play games, view leaderboards, customize profiles, and compete for high scores, while admins manage platform content and monitor activity logs.
+**Starcade** is a web-based game platform that provides a retro-modern arcade space-themed experience with full user interaction and administrative control. Users can log in, play games, view leaderboards, customize profiles, and compete for high scores, while admins manage platform content and monitor activity logs.
 
 ---
 
