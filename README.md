@@ -68,14 +68,18 @@ cd starcade
 ```
 
 2. **Move project files to your web server root**
-   
-    If using XAMPP, copy the entire starcade folder into the htdocs directory.
-    Usually found at:
-    C:\xampp\htdocs\starcade (Windows)
-    /opt/lampp/htdocs/starcade (Linux)
 
-4. **Create a MySQL database**
+   If using XAMPP, copy the entire `starcade` folder into the `htdocs` directory.  
+   Typical locations:  
+   - Windows: `C:\xampp\htdocs\starcade`  
+   - Linux: `/opt/lampp/htdocs/starcade`
 
-    Open phpMyAdmin by navigating to http://localhost/phpmyadmin
-    Click Databases and create a new database, e.g. gamesite
-    Use the SQL file Starcade Gamesite Database.sql to import the tables into the database.
+3. **Create a MySQL database**
+
+   - Open phpMyAdmin by navigating to [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
+   - Click on the **Databases** tab and create a new database, e.g., `gamesite`  
+   - Import the tables by using the SQL file `Starcade Gamesite Database.sql` located in your project directory  
+     - Select your new database  
+     - Go to the **Import** tab  
+     - Choose the SQL file and click **Go**
+
